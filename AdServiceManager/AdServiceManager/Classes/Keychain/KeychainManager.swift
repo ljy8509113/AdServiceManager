@@ -10,11 +10,12 @@ import Foundation
 class KeychainManager {
     class func getUUID() -> String {
         let key = "custom_idfa_uuid"
-        if let value = KeychainWrapper.standard.string(forKey: key) {
+        let keychain = KeychainWrapper(serviceName: "AdIdentifier", accessGroup: "group.vlending.ad.identifier")
+        if let value = keychain.string(forKey: key) {
             return value
         } else {
             let uuid = UUID().uuidString
-            KeychainWrapper.standard.set(uuid, forKey: key)
+            keychain.set(uuid, forKey: key)
             return uuid
         }
     }

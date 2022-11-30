@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AdServiceManager'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'Offerwall Sample SDK KIT'
   s.swift_version    = '5.0'
 
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'AdServiceManager/Classes/**/*'
+  s.source_files = 'AdServiceManager/AdServiceManager/Classes/**/*'
   
   # s.resource_bundles = {
   #   'AdServiceManager' => ['AdServiceManager/Assets/*.png']
