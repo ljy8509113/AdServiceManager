@@ -1,0 +1,22 @@
+{
+  "name": "AdServiceManager",
+  "version": "0.1.0",
+  "summary": "A short description of AdServiceManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ljy8509113@nate.com/AdServiceManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ljy8509113@nate.com": "murf@vlending.co.kr"
+  },
+  "source": {
+    "git": "https://github.com/ljy8509113@nate.com/AdServiceManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AdServiceManager/Classes/**/*"
+}
