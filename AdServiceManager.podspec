@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AdServiceManager'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'Offerwall Sample SDK KIT'
   s.swift_version    = '5.0'
 
