@@ -23,8 +23,6 @@ open class AdManager: NSObject {
                     print("idfa: \(idfa)")
                     break
                 case .restricted, .denied:
-                    let uuid = KeychainManager.getUUID()
-                    print("uuid: \(uuid)")
                     break
                 case .notDetermined:
                     break
@@ -35,8 +33,8 @@ open class AdManager: NSObject {
             }
         } else {
             // Fallback on earlier versions
-            let uuid = KeychainManager.getUUID()
-            print("uuid: \(uuid)")
+            let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+            print("uuid: \(idfa)")
         }
     }
     

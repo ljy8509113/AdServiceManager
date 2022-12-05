@@ -8,6 +8,7 @@
 
 import UIKit
 import AdServiceManager
+import Combine
 
 class ViewController: UIViewController {
 
