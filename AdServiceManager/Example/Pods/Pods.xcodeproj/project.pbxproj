@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		48E189AC293DE4C20085B232 /* UniversalRun */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48E189AD293DE4C20085B232 /* Build configuration list for PBXAggregateTarget "UniversalRun" */;
+			buildPhases = (
+				48E189B0293DE4EC0085B232 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalRun;
+			productName = UniversalRun;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		00BCCD8285DCF6E859ECBC68CF24E9F8 /* AdServiceManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3FD4E418DFA4E3D28B62673D213B4 /* AdServiceManager-dummy.m */; };
 		25D44589B6C3C32D5ADF492C3053228B /* Pods-AdServiceManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E64182FA9B373C5F2363ABBFB0B560 /* Pods-AdServiceManager_Example-dummy.m */; };
@@ -82,7 +96,7 @@
 		B099F7B82144349ABBA990C1A542422B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C2CBBC2ADAB4CEB5E48F1BA219708A73 /* AdServiceManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdServiceManager.release.xcconfig; sourceTree = "<group>"; };
 		D841B4E4EB4B1A29AC39533EE064F52E /* Pods-AdServiceManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdServiceManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DFD6FD827B495BEFC886D611B18D8184 /* AdServiceManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AdServiceManager; path = AdServiceManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD6FD827B495BEFC886D611B18D8184 /* AdServiceManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdServiceManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07EE0F8059D4AAE77821E381F9A9D7E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E42A14370FAF07CE09F860DB2D9016CC /* AdServiceManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AdServiceManager-Info.plist"; sourceTree = "<group>"; };
 		F7940B24AD3AFF6B22106DE530A9CF6E /* Pods-AdServiceManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdServiceManager_Example-Info.plist"; sourceTree = "<group>"; };
@@ -230,7 +244,7 @@
 		A99B324ED1D5E8EA757B452043D105DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFD6FD827B495BEFC886D611B18D8184 /* AdServiceManager */,
+				DFD6FD827B495BEFC886D611B18D8184 /* AdServiceManager.framework */,
 				64086F70B053F4D115ADC7F1884491BB /* Pods-AdServiceManager_Example */,
 				8AD140270DA41A1544B0241A5DEE630A /* Pods-AdServiceManager_Tests */,
 			);
@@ -349,7 +363,7 @@
 			);
 			name = AdServiceManager;
 			productName = AdServiceManager;
-			productReference = DFD6FD827B495BEFC886D611B18D8184 /* AdServiceManager */;
+			productReference = DFD6FD827B495BEFC886D611B18D8184 /* AdServiceManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -360,6 +374,13 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					48E189AC293DE4C20085B232 = {
+						CreatedOnToolsVersion = 14.1;
+						DevelopmentTeam = HNWHWD9KZA;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -377,6 +398,7 @@
 				2F358F743E599976417A45E44D6A1172 /* AdServiceManager */,
 				1C21403085FA13E9C822C8A598C106BA /* Pods-AdServiceManager_Example */,
 				1C0E460EBFCCA988663F19245F384A42 /* Pods-AdServiceManager_Tests */,
+				48E189AC293DE4C20085B232 /* UniversalRun */,
 			);
 		};
 /* End PBXProject section */
@@ -405,6 +427,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48E189B0293DE4EC0085B232 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# Setup\nWORKSPACE=\"${HOME}/Desktop/Source/ADS/AdLibrary/AdServiceManager/AdServiceManager/Example/AdServiceManager.xcworkspace\"\nFRAMEWORK_NAME=\"AdServiceManager\"\nBUILD_DIR=\"${SRCROOT}/build\"\nOUTPUT_DIR=\"${HOME}/Desktop/\"\nOUTPUT=\"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\nCONFIGURATION=\"${CONFIGURATION}\"\n\nrm -rf \"${BUILD_DIR}\"\nrm -rf \"${OUTPUT}\"\nmkdir -p \"${OUTPUT_DIR}\"\n\n# Build the framework for device and for simulator (using all needed architectures).\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${FRAMEWORK_NAME}\" -configuration ${CONFIGURATION} -arch x86_64 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\" -derivedDataPath ../derived_data clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${FRAMEWORK_NAME}\" -configuration ${CONFIGURATION} -arch arm64 only_active_arch=no defines_module=yes -sdk \"iphoneos\" -derivedDataPath ../derived_data clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n\n# Copy the device version of framework to output.\ncp -r \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\" \"${OUTPUT}\"\n\n# Replace the framework executable within the framework with a new version created by merging the device and simulator frameworks' executables with lipo.\nlipo -create -output \"${OUTPUT}/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# Copy the Swift module mappings for the simulator into the framework. The device mappings already exist from step 6.\ncp -r \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${OUTPUT}/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# Delete build.\nrm -rf \"${BUILD_DIR}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5757C83D2635F53302ED9B6547F9E12F /* Sources */ = {
@@ -475,6 +517,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AdServiceManager/AdServiceManager.modulemap";
+				OTHER_LDFLAGS = "";
 				PRODUCT_MODULE_NAME = AdServiceManager;
 				PRODUCT_NAME = AdServiceManager;
 				SDKROOT = iphoneos;
@@ -519,6 +562,24 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48E189AE293DE4C20085B232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNWHWD9KZA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		48E189AF293DE4C20085B232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNWHWD9KZA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -635,6 +696,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AdServiceManager/AdServiceManager.modulemap";
+				OTHER_LDFLAGS = "";
 				PRODUCT_MODULE_NAME = AdServiceManager;
 				PRODUCT_NAME = AdServiceManager;
 				SDKROOT = iphoneos;
@@ -806,6 +868,15 @@
 			buildConfigurations = (
 				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
 				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E189AD293DE4C20085B232 /* Build configuration list for PBXAggregateTarget "UniversalRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E189AE293DE4C20085B232 /* Debug */,
+				48E189AF293DE4C20085B232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
