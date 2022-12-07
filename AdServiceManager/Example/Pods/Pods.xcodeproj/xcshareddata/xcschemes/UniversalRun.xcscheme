@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "48E189AC293DE4C20085B232"
-               BuildableName = "UniversalRun"
-               BlueprintName = "UniversalRun"
+               BuildableName = "Universal"
+               BlueprintName = "Universal"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E189AC293DE4C20085B232"
-            BuildableName = "UniversalRun"
-            BlueprintName = "UniversalRun"
+            BuildableName = "Universal"
+            BlueprintName = "Universal"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

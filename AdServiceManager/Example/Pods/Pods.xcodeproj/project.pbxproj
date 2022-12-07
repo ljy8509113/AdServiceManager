@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		48E189AC293DE4C20085B232 /* UniversalRun */ = {
+		48E189AC293DE4C20085B232 /* Universal */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 48E189AD293DE4C20085B232 /* Build configuration list for PBXAggregateTarget "UniversalRun" */;
+			buildConfigurationList = 48E189AD293DE4C20085B232 /* Build configuration list for PBXAggregateTarget "Universal" */;
 			buildPhases = (
 				48E189B0293DE4EC0085B232 /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = UniversalRun;
+			name = Universal;
 			productName = UniversalRun;
 		};
 /* End PBXAggregateTarget section */
@@ -398,7 +398,7 @@
 				2F358F743E599976417A45E44D6A1172 /* AdServiceManager */,
 				1C21403085FA13E9C822C8A598C106BA /* Pods-AdServiceManager_Example */,
 				1C0E460EBFCCA988663F19245F384A42 /* Pods-AdServiceManager_Tests */,
-				48E189AC293DE4C20085B232 /* UniversalRun */,
+				48E189AC293DE4C20085B232 /* Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -570,6 +570,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNWHWD9KZA;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -579,6 +580,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNWHWD9KZA;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -872,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48E189AD293DE4C20085B232 /* Build configuration list for PBXAggregateTarget "UniversalRun" */ = {
+		48E189AD293DE4C20085B232 /* Build configuration list for PBXAggregateTarget "Universal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48E189AE293DE4C20085B232 /* Debug */,
