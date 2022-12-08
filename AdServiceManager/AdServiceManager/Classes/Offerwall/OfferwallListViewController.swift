@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class OfferwallListViewController: UIViewController {
 
@@ -34,6 +35,15 @@ extension OfferwallListViewController : UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = array[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        AF.request("https://api.bithumb.com/public/ticker/ALL_KRW", method: .get)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseJSON { res in
+                print(res)
+            }
     }
     
 }

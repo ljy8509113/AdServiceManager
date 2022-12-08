@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AdServiceManager'
-  s.version          = '0.0.8'
+  s.version          = '0.0.9'
   s.summary          = 'Offerwall Sample SDK KIT'
   s.swift_version    = '5.0'
 
@@ -31,14 +31,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
 
-  #s.source_files = 'AdServiceManager/AdServiceManager/Classes/**/*'
-  s.vendored_frameworks = 'AdServiceManager/AdServiceManager.framework'
+  s.source_files = 'AdServiceManager/Classes/**/*'
+  s.vendored_frameworks = 'AdServiceManager/AdServiceManager.xcframework'
 
-#  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  #s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
-  #s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
-
+  s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
+  s.user_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
+  
+  s.dependency 'Alamofire'
   
   # s.resource_bundles = {
   #   'AdServiceManager' => ['AdServiceManager/Assets/*.png']
