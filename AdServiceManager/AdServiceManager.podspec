@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'AdServiceManager/Classes/**/*'
+  #s.source_files = 'AdServiceManager/Classes/**/*'
   s.vendored_frameworks = 'AdServiceManager/AdServiceManager.xcframework'
 
   s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }

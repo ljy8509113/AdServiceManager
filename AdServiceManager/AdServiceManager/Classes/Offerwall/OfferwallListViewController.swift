@@ -43,6 +43,12 @@ extension OfferwallListViewController : UITableViewDelegate, UITableViewDataSour
             .validate(contentType: ["application/json"])
             .responseJSON { res in
                 print(res)
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Res", message: "\(res)", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "확인", style: .default)
+                    alert.addAction(defaultAction)
+                    self.present(alert, animated: true)
+                }
             }
     }
     

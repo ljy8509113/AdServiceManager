@@ -99,6 +99,7 @@
             "usr": "s:16AdServiceManager0aC0C5startyyF",
             "mangledName": "$s16AdServiceManager0aC0C5startyyF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -125,6 +126,7 @@
             "usr": "s:16AdServiceManager0aC0C13openOfferwall13viewContrllerySo16UIViewControllerC_tF",
             "mangledName": "$s16AdServiceManager0aC0C13openOfferwall13viewContrllerySo16UIViewControllerC_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -225,12 +227,568 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AdServiceManager",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeychainAttrRepresentable",
+        "printedName": "KeychainAttrRepresentable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "keychainAttrValue",
+            "printedName": "keychainAttrValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CFString",
+                "printedName": "CoreFoundation.CFString",
+                "usr": "c:@T@CFStringRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AdServiceManager25KeychainAttrRepresentableP08keychainE5ValueSo11CFStringRefavp",
+            "mangledName": "$s16AdServiceManager25KeychainAttrRepresentableP08keychainE5ValueSo11CFStringRefavp",
+            "moduleName": "AdServiceManager",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CFString",
+                    "printedName": "CoreFoundation.CFString",
+                    "usr": "c:@T@CFStringRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AdServiceManager25KeychainAttrRepresentableP08keychainE5ValueSo11CFStringRefavg",
+                "mangledName": "$s16AdServiceManager25KeychainAttrRepresentableP08keychainE5ValueSo11CFStringRefavg",
+                "moduleName": "AdServiceManager",
+                "genericSig": "<τ_0_0 where τ_0_0 : AdServiceManager.KeychainAttrRepresentable>",
+                "sugared_genericSig": "<Self where Self : AdServiceManager.KeychainAttrRepresentable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16AdServiceManager25KeychainAttrRepresentableP",
+        "mangledName": "$s16AdServiceManager25KeychainAttrRepresentableP",
+        "moduleName": "AdServiceManager"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeychainItemAccessibility",
+        "printedName": "KeychainItemAccessibility",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "afterFirstUnlock",
+            "printedName": "afterFirstUnlock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainItemAccessibility",
+                        "printedName": "AdServiceManager.KeychainItemAccessibility",
+                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO16afterFirstUnlockyA2CmF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO16afterFirstUnlockyA2CmF",
+            "moduleName": "AdServiceManager",
+            "intro_iOS": "4",
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "afterFirstUnlockThisDeviceOnly",
+            "printedName": "afterFirstUnlockThisDeviceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainItemAccessibility",
+                        "printedName": "AdServiceManager.KeychainItemAccessibility",
+                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO30afterFirstUnlockThisDeviceOnlyyA2CmF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO30afterFirstUnlockThisDeviceOnlyyA2CmF",
+            "moduleName": "AdServiceManager",
+            "intro_iOS": "4",
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "always",
+            "printedName": "always",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainItemAccessibility",
+                        "printedName": "AdServiceManager.KeychainItemAccessibility",
+                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO6alwaysyA2CmF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO6alwaysyA2CmF",
+            "moduleName": "AdServiceManager",
+            "intro_iOS": "4",
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenPasscodeSetThisDeviceOnly",
+            "printedName": "whenPasscodeSetThisDeviceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainItemAccessibility",
+                        "printedName": "AdServiceManager.KeychainItemAccessibility",
+                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO29whenPasscodeSetThisDeviceOnlyyA2CmF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO29whenPasscodeSetThisDeviceOnlyyA2CmF",
+            "moduleName": "AdServiceManager",
+            "intro_iOS": "8",
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alwaysThisDeviceOnly",
+            "printedName": "alwaysThisDeviceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainItemAccessibility",
+                        "printedName": "AdServiceManager.KeychainItemAccessibility",
+                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO20alwaysThisDeviceOnlyyA2CmF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO20alwaysThisDeviceOnlyyA2CmF",
+            "moduleName": "AdServiceManager",
+            "intro_iOS": "4",
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenUnlocked",
+            "printedName": "whenUnlocked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainItemAccessibility",
+                        "printedName": "AdServiceManager.KeychainItemAccessibility",
+                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO12whenUnlockedyA2CmF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO12whenUnlockedyA2CmF",
+            "moduleName": "AdServiceManager",
+            "intro_iOS": "4",
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenUnlockedThisDeviceOnly",
+            "printedName": "whenUnlockedThisDeviceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainItemAccessibility",
+                        "printedName": "AdServiceManager.KeychainItemAccessibility",
+                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO26whenUnlockedThisDeviceOnlyyA2CmF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO26whenUnlockedThisDeviceOnlyyA2CmF",
+            "moduleName": "AdServiceManager",
+            "intro_iOS": "4",
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "accessibilityForAttributeValue",
+            "printedName": "accessibilityForAttributeValue(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdServiceManager.KeychainItemAccessibility?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeychainItemAccessibility",
+                    "printedName": "AdServiceManager.KeychainItemAccessibility",
+                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CFString",
+                "printedName": "CoreFoundation.CFString",
+                "usr": "c:@T@CFStringRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO30accessibilityForAttributeValueyACSgSo11CFStringRefaFZ",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO30accessibilityForAttributeValueyACSgSo11CFStringRefaFZ",
+            "moduleName": "AdServiceManager",
+            "static": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainItemAccessibility",
+                "printedName": "AdServiceManager.KeychainItemAccessibility",
+                "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainItemAccessibility",
+                "printedName": "AdServiceManager.KeychainItemAccessibility",
+                "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO2eeoiySbAC_ACtFZ",
+            "moduleName": "AdServiceManager",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO9hashValueSivp",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO9hashValueSivp",
+            "moduleName": "AdServiceManager",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AdServiceManager25KeychainItemAccessibilityO9hashValueSivg",
+                "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO9hashValueSivg",
+                "moduleName": "AdServiceManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO4hash4intoys6HasherVz_tF",
+            "moduleName": "AdServiceManager",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "keychainAttrValue",
+            "printedName": "keychainAttrValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CFString",
+                "printedName": "CoreFoundation.CFString",
+                "usr": "c:@T@CFStringRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO17keychainAttrValueSo11CFStringRefavp",
+            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO17keychainAttrValueSo11CFStringRefavp",
+            "moduleName": "AdServiceManager",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CFString",
+                    "printedName": "CoreFoundation.CFString",
+                    "usr": "c:@T@CFStringRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AdServiceManager25KeychainItemAccessibilityO17keychainAttrValueSo11CFStringRefavg",
+                "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO17keychainAttrValueSo11CFStringRefavg",
+                "moduleName": "AdServiceManager",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO",
+        "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO",
+        "moduleName": "AdServiceManager",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KeychainAttrRepresentable",
+            "printedName": "KeychainAttrRepresentable",
+            "usr": "s:16AdServiceManager25KeychainAttrRepresentableP",
+            "mangledName": "$s16AdServiceManager25KeychainAttrRepresentableP"
+          }
         ]
       },
       {
@@ -244,11 +802,55 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "AdServiceManager"
+        "kind": "TypeDecl",
+        "name": "KeychainManager",
+        "printedName": "KeychainManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getUUID",
+            "printedName": "getUUID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16AdServiceManager08KeychainC0C7getUUIDSSyFZ",
+            "mangledName": "$s16AdServiceManager08KeychainC0C7getUUIDSSyFZ",
+            "moduleName": "AdServiceManager",
+            "static": true,
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainManager",
+                "printedName": "AdServiceManager.KeychainManager",
+                "usr": "s:16AdServiceManager08KeychainC0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16AdServiceManager08KeychainC0CACycfc",
+            "mangledName": "$s16AdServiceManager08KeychainC0CACycfc",
+            "moduleName": "AdServiceManager",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16AdServiceManager08KeychainC0C",
+        "mangledName": "$s16AdServiceManager08KeychainC0C",
+        "moduleName": "AdServiceManager",
+        "isOpen": true
       },
       {
         "kind": "Import",
@@ -386,6 +988,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC11serviceNameSSvp",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC11serviceNameSSvp",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "declAttributes": [
               "HasStorage",
               "AccessControl",
@@ -411,6 +1014,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperC11serviceNameSSvg",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "get"
               }
             ]
@@ -439,6 +1043,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC11accessGroupSSSgvp",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC11accessGroupSSSgvp",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
@@ -473,6 +1078,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperC11accessGroupSSSgvg",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "get"
               }
             ]
@@ -1683,6 +2289,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC6remove6forKeyyAC0H0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC6remove6forKeyyAC0H0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1716,6 +2323,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperCySSSgAC3KeyVcip",
             "mangledName": "$s16AdServiceManager15KeychainWrapperCySSSgAC3KeyVcip",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -1748,6 +2356,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySSSgAC3KeyVcig",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySSSgAC3KeyVcig",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               },
@@ -1786,6 +2395,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySSSgAC3KeyVcis",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySSSgAC3KeyVcis",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "set"
               },
@@ -1811,6 +2421,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySSSgAC3KeyVciM",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -1846,6 +2457,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperCySbSgAC3KeyVcip",
             "mangledName": "$s16AdServiceManager15KeychainWrapperCySbSgAC3KeyVcip",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -1878,6 +2490,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySbSgAC3KeyVcig",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySbSgAC3KeyVcig",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               },
@@ -1916,6 +2529,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySbSgAC3KeyVcis",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySbSgAC3KeyVcis",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "set"
               },
@@ -1941,6 +2555,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySbSgAC3KeyVciM",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -1976,6 +2591,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperCySiSgAC3KeyVcip",
             "mangledName": "$s16AdServiceManager15KeychainWrapperCySiSgAC3KeyVcip",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -2008,6 +2624,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySiSgAC3KeyVcig",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySiSgAC3KeyVcig",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               },
@@ -2046,6 +2663,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySiSgAC3KeyVcis",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySiSgAC3KeyVcis",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "set"
               },
@@ -2071,6 +2689,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySiSgAC3KeyVciM",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -2106,6 +2725,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperCySdSgAC3KeyVcip",
             "mangledName": "$s16AdServiceManager15KeychainWrapperCySdSgAC3KeyVcip",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -2138,6 +2758,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySdSgAC3KeyVcig",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySdSgAC3KeyVcig",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               },
@@ -2176,6 +2797,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySdSgAC3KeyVcis",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySdSgAC3KeyVcis",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "set"
               },
@@ -2201,6 +2823,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySdSgAC3KeyVciM",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -2236,6 +2859,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperCySfSgAC3KeyVcip",
             "mangledName": "$s16AdServiceManager15KeychainWrapperCySfSgAC3KeyVcip",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -2268,6 +2892,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySfSgAC3KeyVcig",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySfSgAC3KeyVcig",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               },
@@ -2306,6 +2931,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCySfSgAC3KeyVcis",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySfSgAC3KeyVcis",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "set"
               },
@@ -2331,6 +2957,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCySfSgAC3KeyVciM",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -2366,6 +2993,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperCy14CoreFoundation7CGFloatVSgAC3KeyVcip",
             "mangledName": "$s16AdServiceManager15KeychainWrapperCy12CoreGraphics7CGFloatVSgAC3KeyVcip",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -2398,6 +3026,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCy14CoreFoundation7CGFloatVSgAC3KeyVcig",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCy12CoreGraphics7CGFloatVSgAC3KeyVcig",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               },
@@ -2436,6 +3065,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCy14CoreFoundation7CGFloatVSgAC3KeyVcis",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCy12CoreGraphics7CGFloatVSgAC3KeyVcis",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "set"
               },
@@ -2461,6 +3091,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCy12CoreGraphics7CGFloatVSgAC3KeyVciM",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -2496,6 +3127,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperCy10Foundation4DataVSgAC3KeyVcip",
             "mangledName": "$s16AdServiceManager15KeychainWrapperCy10Foundation4DataVSgAC3KeyVcip",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -2528,6 +3160,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCy10Foundation4DataVSgAC3KeyVcig",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCy10Foundation4DataVSgAC3KeyVcig",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               },
@@ -2566,6 +3199,7 @@
                 "usr": "s:16AdServiceManager15KeychainWrapperCy10Foundation4DataVSgAC3KeyVcis",
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCy10Foundation4DataVSgAC3KeyVcis",
                 "moduleName": "AdServiceManager",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "set"
               },
@@ -2591,6 +3225,7 @@
                 "mangledName": "$s16AdServiceManager15KeychainWrapperCy10Foundation4DataVSgAC3KeyVciM",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -2626,6 +3261,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC4data6forKey10Foundation4DataVSgAC0H0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC4data6forKey10Foundation4DataVSgAC0H0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2659,6 +3295,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC4bool6forKeySbSgAC0H0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC4bool6forKeySbSgAC0H0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2692,6 +3329,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC7integer6forKeySiSgAC0H0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC7integer6forKeySiSgAC0H0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2725,6 +3363,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC5float6forKeySfSgAC0H0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC5float6forKeySfSgAC0H0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2758,6 +3397,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC7cgFloat6forKey14CoreFoundation7CGFloatVSgAC0I0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC7cgFloat6forKey12CoreGraphics7CGFloatVSgAC0I0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2791,6 +3431,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC6double6forKeySdSgAC0H0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC6double6forKeySdSgAC0H0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2824,6 +3465,7 @@
             "usr": "s:16AdServiceManager15KeychainWrapperC6string6forKeySSSgAC0H0V_tF",
             "mangledName": "$s16AdServiceManager15KeychainWrapperC6string6forKeySSSgAC0H0V_tF",
             "moduleName": "AdServiceManager",
+            "isOpen": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -3104,353 +3746,61 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AdServiceManager"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdServiceManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "AdServiceManager"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "KeychainItemAccessibility",
-        "printedName": "KeychainItemAccessibility",
+        "name": "OfferwallListViewController",
+        "printedName": "OfferwallListViewController",
         "children": [
           {
             "kind": "Var",
-            "name": "afterFirstUnlock",
-            "printedName": "afterFirstUnlock",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeychainItemAccessibility",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility",
-                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KeychainItemAccessibility",
-                        "printedName": "AdServiceManager.KeychainItemAccessibility",
-                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO16afterFirstUnlockyA2CmF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO16afterFirstUnlockyA2CmF",
-            "moduleName": "AdServiceManager",
-            "intro_iOS": "4",
-            "declAttributes": [
-              "Available",
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "afterFirstUnlockThisDeviceOnly",
-            "printedName": "afterFirstUnlockThisDeviceOnly",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeychainItemAccessibility",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility",
-                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KeychainItemAccessibility",
-                        "printedName": "AdServiceManager.KeychainItemAccessibility",
-                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO30afterFirstUnlockThisDeviceOnlyyA2CmF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO30afterFirstUnlockThisDeviceOnlyyA2CmF",
-            "moduleName": "AdServiceManager",
-            "intro_iOS": "4",
-            "declAttributes": [
-              "Available",
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "always",
-            "printedName": "always",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeychainItemAccessibility",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility",
-                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KeychainItemAccessibility",
-                        "printedName": "AdServiceManager.KeychainItemAccessibility",
-                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO6alwaysyA2CmF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO6alwaysyA2CmF",
-            "moduleName": "AdServiceManager",
-            "intro_iOS": "4",
-            "declAttributes": [
-              "Available",
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "whenPasscodeSetThisDeviceOnly",
-            "printedName": "whenPasscodeSetThisDeviceOnly",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeychainItemAccessibility",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility",
-                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KeychainItemAccessibility",
-                        "printedName": "AdServiceManager.KeychainItemAccessibility",
-                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO29whenPasscodeSetThisDeviceOnlyyA2CmF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO29whenPasscodeSetThisDeviceOnlyyA2CmF",
-            "moduleName": "AdServiceManager",
-            "intro_iOS": "8",
-            "declAttributes": [
-              "Available",
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "alwaysThisDeviceOnly",
-            "printedName": "alwaysThisDeviceOnly",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeychainItemAccessibility",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility",
-                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KeychainItemAccessibility",
-                        "printedName": "AdServiceManager.KeychainItemAccessibility",
-                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO20alwaysThisDeviceOnlyyA2CmF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO20alwaysThisDeviceOnlyyA2CmF",
-            "moduleName": "AdServiceManager",
-            "intro_iOS": "4",
-            "declAttributes": [
-              "Available",
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "whenUnlocked",
-            "printedName": "whenUnlocked",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeychainItemAccessibility",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility",
-                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KeychainItemAccessibility",
-                        "printedName": "AdServiceManager.KeychainItemAccessibility",
-                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO12whenUnlockedyA2CmF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO12whenUnlockedyA2CmF",
-            "moduleName": "AdServiceManager",
-            "intro_iOS": "4",
-            "declAttributes": [
-              "Available",
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "whenUnlockedThisDeviceOnly",
-            "printedName": "whenUnlockedThisDeviceOnly",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdServiceManager.KeychainItemAccessibility.Type) -> AdServiceManager.KeychainItemAccessibility",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeychainItemAccessibility",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility",
-                    "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdServiceManager.KeychainItemAccessibility.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KeychainItemAccessibility",
-                        "printedName": "AdServiceManager.KeychainItemAccessibility",
-                        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO26whenUnlockedThisDeviceOnlyyA2CmF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO26whenUnlockedThisDeviceOnlyyA2CmF",
-            "moduleName": "AdServiceManager",
-            "intro_iOS": "4",
-            "declAttributes": [
-              "Available",
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
+            "name": "tableView",
+            "printedName": "tableView",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KeychainItemAccessibility",
-                "printedName": "AdServiceManager.KeychainItemAccessibility",
-                "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KeychainItemAccessibility",
-                "printedName": "AdServiceManager.KeychainItemAccessibility",
-                "usr": "s:16AdServiceManager25KeychainItemAccessibilityO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO2eeoiySbAC_ACtFZ",
-            "moduleName": "AdServiceManager",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "WeakStorage",
+                "printedName": "UIKit.UITableView?"
               }
             ],
             "declKind": "Var",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO9hashValueSivp",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO9hashValueSivp",
+            "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController(py)tableView",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC05tableF0So07UITableF0CSgvp",
             "moduleName": "AdServiceManager",
-            "implicit": true,
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "IBOutlet",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 1,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3459,24 +3809,404 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "UIKit.UITableView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UITableView",
+                        "printedName": "UIKit.UITableView",
+                        "usr": "c:objc(cs)UITableView"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16AdServiceManager25KeychainItemAccessibilityO9hashValueSivg",
-                "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO9hashValueSivg",
+                "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController(im)tableView",
+                "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC05tableF0So07UITableF0CSgvg",
                 "moduleName": "AdServiceManager",
                 "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "UIKit.UITableView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UITableView",
+                        "printedName": "UIKit.UITableView",
+                        "usr": "c:objc(cs)UITableView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController(im)setTableView:",
+                "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC05tableF0So07UITableF0CSgvs",
+                "moduleName": "AdServiceManager",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AdServiceManager27OfferwallListViewControllerC05tableF0So07UITableF0CSgvM",
+                "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC05tableF0So07UITableF0CSgvM",
+                "moduleName": "AdServiceManager",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "array",
+            "printedName": "array",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvp",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvp",
+            "moduleName": "AdServiceManager",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvg",
+                "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvg",
+                "moduleName": "AdServiceManager",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvs",
+                "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvs",
+                "moduleName": "AdServiceManager",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvM",
+                "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC5arraySaySSGvM",
+                "moduleName": "AdServiceManager",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
             ]
           },
           {
             "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController(im)viewDidLoad",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC11viewDidLoadyyF",
+            "moduleName": "AdServiceManager",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OfferwallListViewController",
+                "printedName": "AdServiceManager.OfferwallListViewController",
+                "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "AdServiceManager",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdServiceManager.OfferwallListViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OfferwallListViewController",
+                    "printedName": "AdServiceManager.OfferwallListViewController",
+                    "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController(im)initWithCoder:",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "AdServiceManager",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:numberOfRowsInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AdServiceManager@objc(cs)OfferwallListViewController(im)tableView:numberOfRowsInSection:",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC05tableF0_21numberOfRowsInSectionSiSo07UITableF0C_SitF",
+            "moduleName": "AdServiceManager",
+            "isOpen": true,
+            "objc_name": "tableView:numberOfRowsInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:cellForRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AdServiceManager@objc(cs)OfferwallListViewController(im)tableView:cellForRowAtIndexPath:",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC05tableF0_12cellForRowAtSo07UITableF4CellCSo0mF0C_10Foundation9IndexPathVtF",
+            "moduleName": "AdServiceManager",
+            "isOpen": true,
+            "objc_name": "tableView:cellForRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:didSelectRowAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3485,27 +4215,47 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16AdServiceManager25KeychainItemAccessibilityO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO4hash4intoys6HasherVz_tF",
+            "usr": "c:@CM@AdServiceManager@objc(cs)OfferwallListViewController(im)tableView:didSelectRowAtIndexPath:",
+            "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC05tableF0_14didSelectRowAtySo07UITableF0C_10Foundation9IndexPathVtF",
             "moduleName": "AdServiceManager",
-            "implicit": true,
+            "isOpen": true,
+            "objc_name": "tableView:didSelectRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Enum",
-        "usr": "s:16AdServiceManager25KeychainItemAccessibilityO",
-        "mangledName": "$s16AdServiceManager25KeychainItemAccessibilityO",
+        "declKind": "Class",
+        "usr": "c:@M@AdServiceManager@objc(cs)OfferwallListViewController",
+        "mangledName": "$s16AdServiceManager27OfferwallListViewControllerC",
         "moduleName": "AdServiceManager",
+        "isOpen": true,
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "Custom",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -3521,30 +4271,48 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AdServiceManager",
-        "declAttributes": [
-          "RawDocComment"
         ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/murf\/Desktop\/Source\/ADS\/AdLibrary\/AdServiceManager\/AdServiceManager\/AdServiceManager\/Classes\/Offerwall\/OfferwallListViewController.swift",
-      "kind": "Array",
-      "offset": 246,
-      "length": 15,
-      "value": "[\"1\", \"2\", \"3\"]"
-    },
     {
       "filePath": "\/Users\/murf\/Desktop\/Source\/ADS\/AdLibrary\/AdServiceManager\/AdServiceManager\/AdServiceManager\/Classes\/Keychain\/KeychainWrapper.swift",
       "kind": "StringLiteral",
@@ -3691,6 +4459,13 @@
       "offset": 24013,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/murf\/Desktop\/Source\/ADS\/AdLibrary\/AdServiceManager\/AdServiceManager\/AdServiceManager\/Classes\/Offerwall\/OfferwallListViewController.swift",
+      "kind": "Array",
+      "offset": 263,
+      "length": 15,
+      "value": "[\"1\", \"2\", \"3\"]"
     }
   ]
 }

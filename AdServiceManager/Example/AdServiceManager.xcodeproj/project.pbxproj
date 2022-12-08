@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		48FD4C472941DAA200E58234 /* PodBuild */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48FD4C482941DAA200E58234 /* Build configuration list for PBXAggregateTarget "PodBuild" */;
+			buildPhases = (
+				48FD4C4B2941DABF00E58234 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PodBuild;
+			productName = PodBuild;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -212,6 +226,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					48FD4C472941DAA200E58234 = {
+						CreatedOnToolsVersion = 14.1;
+						DevelopmentTeam = HNWHWD9KZA;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = HNWHWD9KZA;
@@ -241,6 +260,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* AdServiceManager_Example */,
 				607FACE41AFB9204008FA782 /* AdServiceManager_Tests */,
+				48FD4C472941DAA200E58234 /* PodBuild */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +286,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		48FD4C4B2941DABF00E58234 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nset -e\n\n#Setup\n\nWORKSPACE=\"${SRCROOT}/AdServiceManager.xcworkspace\"\nSCHEME=\"AdServiceManager\"\nFRAMEWORK_NAME=\"${SCHEME}.framework\"\nOUTPUT_DIR=\"${SRCROOT}/..\"\nBUILD_DIR=\"${OUTPUT_DIR}/build\"\nOUTPUT=\"${OUTPUT_DIR}/${SCHEME}.xcframework\"\nCONFIGURATION=\"${CONFIGURATION}\"\n\nARCHIVE_IPHONE=\"${BUILD_DIR}/${SCHEME}-iphoneos.xcarchive\"\nARCHIVE_SIMULATOR=\"${BUILD_DIR}/${SCHEME}-iphonesimulator.xcarchive\"\nPRODUCT_FRAMEWORK=\"Products/Library/Frameworks/${FRAMEWORK_NAME}\"\n\nrm -rf \"${BUILD_DIR}\"\nrm -rf \"${OUTPUT}\"\n\nmkdir -p \"${OUTPUT_DIR}\"\n\n#archive iPhone\nxcodebuild archive -workspace \"${WORKSPACE}\" -scheme \"${SCHEME}\" -configuration ${CONFIGURATION} SKIP_INSTALL=NO -sdk \"iphoneos\" BUILD_LIBRARY_FOR_DISTRIBUTION=YES -archivePath \"${ARCHIVE_IPHONE}\"\n\n#archive simulator\nxcodebuild archive -workspace \"${WORKSPACE}\" -scheme \"${SCHEME}\" -configuration ${CONFIGURATION} SKIP_INSTALL=NO -sdk \"iphonesimulator\" BUILD_LIBRARY_FOR_DISTRIBUTION=YES -archivePath \"${ARCHIVE_SIMULATOR}\"\n\nrm -rf \"${OUTPUT}\"\n\nxcodebuild -create-xcframework -framework \"${ARCHIVE_IPHONE}/${PRODUCT_FRAMEWORK}\" -framework \"${ARCHIVE_SIMULATOR}/${PRODUCT_FRAMEWORK}\" -output \"${OUTPUT}\"\n\nrm -rf \"${BUILD_DIR}\"\n";
+		};
 		52A603FAFB146007C4267043 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,6 +417,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		48FD4C492941DAA200E58234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNWHWD9KZA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		48FD4C4A2941DAA200E58234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HNWHWD9KZA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,6 +617,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		48FD4C482941DAA200E58234 /* Build configuration list for PBXAggregateTarget "PodBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48FD4C492941DAA200E58234 /* Debug */,
+				48FD4C4A2941DAA200E58234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AdServiceManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

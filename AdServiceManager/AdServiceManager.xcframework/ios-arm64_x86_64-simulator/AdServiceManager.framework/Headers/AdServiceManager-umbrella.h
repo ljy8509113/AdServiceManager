@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SwiftKeychainWrapper.h"
 
 FOUNDATION_EXPORT double AdServiceManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char AdServiceManagerVersionString[];
