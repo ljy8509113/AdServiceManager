@@ -1,0 +1,142 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 effective-4.1.50 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name AdServiceManager
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import AdServiceManager
+import AdSupport
+import AppTrackingTransparency
+import CoreGraphics
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers open class AdManager : ObjectiveC.NSObject {
+  public static let shared: AdServiceManager.AdManager
+  public func start()
+  public func openOfferwall(viewContrller: UIKit.UIViewController)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension AdServiceManager.KeychainWrapper {
+  public func remove(forKey key: AdServiceManager.KeychainWrapper.Key)
+}
+extension AdServiceManager.KeychainWrapper {
+  public subscript(key: AdServiceManager.KeychainWrapper.Key) -> Swift.String? {
+    get
+    set
+  }
+  public subscript(key: AdServiceManager.KeychainWrapper.Key) -> Swift.Bool? {
+    get
+    set
+  }
+  public subscript(key: AdServiceManager.KeychainWrapper.Key) -> Swift.Int? {
+    get
+    set
+  }
+  public subscript(key: AdServiceManager.KeychainWrapper.Key) -> Swift.Double? {
+    get
+    set
+  }
+  public subscript(key: AdServiceManager.KeychainWrapper.Key) -> Swift.Float? {
+    get
+    set
+  }
+  public subscript(key: AdServiceManager.KeychainWrapper.Key) -> CoreFoundation.CGFloat? {
+    get
+    set
+  }
+  public subscript(key: AdServiceManager.KeychainWrapper.Key) -> Foundation.Data? {
+    get
+    set
+  }
+}
+extension AdServiceManager.KeychainWrapper {
+  public func data(forKey key: AdServiceManager.KeychainWrapper.Key) -> Foundation.Data?
+  public func bool(forKey key: AdServiceManager.KeychainWrapper.Key) -> Swift.Bool?
+  public func integer(forKey key: AdServiceManager.KeychainWrapper.Key) -> Swift.Int?
+  public func float(forKey key: AdServiceManager.KeychainWrapper.Key) -> Swift.Float?
+  public func cgFloat(forKey key: AdServiceManager.KeychainWrapper.Key) -> CoreFoundation.CGFloat?
+  public func double(forKey key: AdServiceManager.KeychainWrapper.Key) -> Swift.Double?
+  public func string(forKey key: AdServiceManager.KeychainWrapper.Key) -> Swift.String?
+}
+extension AdServiceManager.KeychainWrapper {
+  public struct Key : Swift.Hashable, Swift.RawRepresentable, Swift.ExpressibleByStringLiteral {
+    public var rawValue: Swift.String
+    public init(rawValue: Swift.String)
+    public init(stringLiteral value: Swift.String)
+    public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+    public typealias RawValue = Swift.String
+    public typealias StringLiteralType = Swift.String
+    public typealias UnicodeScalarLiteralType = Swift.String
+  }
+}
+open class KeychainWrapper {
+  @available(*, deprecated, message: "KeychainWrapper.defaultKeychainWrapper is deprecated since version 2.2.1, use KeychainWrapper.standard instead")
+  public static let defaultKeychainWrapper: AdServiceManager.KeychainWrapper
+  public static let standard: AdServiceManager.KeychainWrapper
+  public var serviceName: Swift.String {
+    get
+  }
+  public var accessGroup: Swift.String? {
+    get
+  }
+  public init(serviceName: Swift.String, accessGroup: Swift.String? = nil)
+  open func hasValue(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  open func accessibilityOfKey(_ key: Swift.String) -> AdServiceManager.KeychainItemAccessibility?
+  open func allKeys() -> Swift.Set<Swift.String>
+  open func integer(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Int?
+  open func float(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Float?
+  open func double(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Double?
+  open func bool(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool?
+  open func string(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.String?
+  open func object(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Foundation.NSCoding?
+  open func data(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Foundation.Data?
+  open func dataRef(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Foundation.Data?
+  @discardableResult
+  open func set(_ value: Swift.Int, forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Float, forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Double, forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.String, forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Foundation.NSCoding, forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @available(*, deprecated, message: "remove is deprecated since version 2.2.1, use removeObject instead")
+  @discardableResult
+  open func remove(key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func removeObject(forKey key: Swift.String, withAccessibility accessibility: AdServiceManager.KeychainItemAccessibility? = nil, isSynchronizable: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  open func removeAllKeys() -> Swift.Bool
+  open class func wipeKeychain()
+  @objc deinit
+}
+public enum KeychainItemAccessibility {
+  @available(iOS 4, *)
+  case afterFirstUnlock
+  @available(iOS 4, *)
+  case afterFirstUnlockThisDeviceOnly
+  @available(iOS 4, *)
+  case always
+  @available(iOS 8, *)
+  case whenPasscodeSetThisDeviceOnly
+  @available(iOS 4, *)
+  case alwaysThisDeviceOnly
+  @available(iOS 4, *)
+  case whenUnlocked
+  @available(iOS 4, *)
+  case whenUnlockedThisDeviceOnly
+  public static func == (a: AdServiceManager.KeychainItemAccessibility, b: AdServiceManager.KeychainItemAccessibility) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AdServiceManager.KeychainItemAccessibility : Swift.Equatable {}
+extension AdServiceManager.KeychainItemAccessibility : Swift.Hashable {}
