@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AdServiceManager'
-  s.version          = '0.0.14'
+  s.version          = '0.0.15'
   s.summary          = 'Offerwall Sample SDK KIT'
   s.swift_version    = '5.0'
 
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
   s.user_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
   
-  s.dependency 'Alamofire'
+  s.dependency 'Alamofire', '<~ 5.1'
   
   # s.resource_bundles = {
   #   'AdServiceManager' => ['AdServiceManager/Assets/*.png']
