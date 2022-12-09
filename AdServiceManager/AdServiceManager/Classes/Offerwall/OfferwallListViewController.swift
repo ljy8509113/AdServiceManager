@@ -41,10 +41,14 @@ extension OfferwallListViewController : UITableViewDelegate, UITableViewDataSour
         AF.request("https://api.bithumb.com/public/ticker/ALL_KRW", method: .get)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseJSON { res in
-                print(res)
+            .response { res in
+                var result:String?
+                if let data = res.data {
+                    result = String(data: data, encoding: .utf8)
+                    print(result ?? "")
+                }
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Res", message: "\(res)", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Res", message: result, preferredStyle: .alert)
                     let defaultAction = UIAlertAction(title: "확인", style: .default)
                     alert.addAction(defaultAction)
                     self.present(alert, animated: true)

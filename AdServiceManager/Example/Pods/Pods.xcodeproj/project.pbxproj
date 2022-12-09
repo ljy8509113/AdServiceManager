@@ -24,7 +24,6 @@
 		36AE3E3DBE52FDC3502A8890C41B3510 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		3CD9021A6AD65B4D185507084E443986 /* Pods-AdServiceManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F65769DC23E2BE9A55DB873C9133171 /* Pods-AdServiceManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F6FFDA0B06EAB28D6AF0B301D91C8BD /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9DC57828C893A0DBC04D18ECCE398 /* MultipartFormData.swift */; };
-		48FD4C4C2942BAC700E58234 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */; };
 		5052CF8DC4EDEB56135CF6121A001802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		538AA169F1B0632437F4D032AC4A842E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49B6E385714464DB6F39C69CDCF3AD /* Request.swift */; };
 		58669C021707350E67A306193B4378DF /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1774BF767AC3195D750B0871A8FCDFD2 /* Notifications.swift */; };
@@ -96,13 +95,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2F358F743E599976417A45E44D6A1172;
 			remoteInfo = AdServiceManager;
-		};
-		ED71F40BFCB18A6D05723CD04EE871CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -218,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36AE3E3DBE52FDC3502A8890C41B3510 /* Foundation.framework in Frameworks */,
-				48FD4C4C2942BAC700E58234 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +533,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A211D4390B0E3405967496252E96593D /* PBXTargetDependency */,
 				48FD4C4F2942BAC700E58234 /* PBXTargetDependency */,
 			);
 			name = AdServiceManager;
@@ -731,12 +721,6 @@
 			name = AdServiceManager;
 			target = 2F358F743E599976417A45E44D6A1172 /* AdServiceManager */;
 			targetProxy = A10C30D6E3F25E6CD511AE0D44D14D26 /* PBXContainerItemProxy */;
-		};
-		A211D4390B0E3405967496252E96593D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = ED71F40BFCB18A6D05723CD04EE871CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
