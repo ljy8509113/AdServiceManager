@@ -420,6 +420,7 @@
 		48FD4C492941DAA200E58234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNWHWD9KZA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +430,7 @@
 		48FD4C4A2941DAA200E58234 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNWHWD9KZA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
