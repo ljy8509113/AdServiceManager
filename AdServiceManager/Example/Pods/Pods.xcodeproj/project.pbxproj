@@ -82,7 +82,7 @@
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		48FD4C4E2942BAC700E58234 /* PBXContainerItemProxy */ = {
+		48FD4C7B2942F7BC00E58234 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -533,7 +533,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				48FD4C4F2942BAC700E58234 /* PBXTargetDependency */,
+				48FD4C7C2942F7BC00E58234 /* PBXTargetDependency */,
 			);
 			name = AdServiceManager;
 			productName = AdServiceManager;
@@ -705,10 +705,10 @@
 			target = 1C21403085FA13E9C822C8A598C106BA /* Pods-AdServiceManager_Example */;
 			targetProxy = 0DED4F219E8957BEFDEAF3C0D9A3B897 /* PBXContainerItemProxy */;
 		};
-		48FD4C4F2942BAC700E58234 /* PBXTargetDependency */ = {
+		48FD4C7C2942F7BC00E58234 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 48FD4C4E2942BAC700E58234 /* PBXContainerItemProxy */;
+			targetProxy = 48FD4C7B2942F7BC00E58234 /* PBXContainerItemProxy */;
 		};
 		78F10BCB205197C4021A2C5D7CF22652 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
