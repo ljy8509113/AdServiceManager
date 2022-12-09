@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
   s.user_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
   
-  s.dependency 'Alamofire', '<~ 5.1'
+  s.dependency 'Alamofire', '~> 5.1'
   
   # s.resource_bundles = {
   #   'AdServiceManager' => ['AdServiceManager/Assets/*.png']
