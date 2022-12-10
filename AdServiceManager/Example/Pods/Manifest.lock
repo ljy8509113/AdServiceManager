@@ -1,6 +1,6 @@
 PODS:
-  - AdServiceManager (0.0.8):
-    - Alamofire
+  - AdServiceManager (0.0.16):
+    - Alamofire (~> 5.1)
   - Alamofire (5.6.4)
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AdServiceManager: 331905105654bceaa398caf8c38c94465572ed70
+  AdServiceManager: 804fefd6f911ed8f59add73e7962e920041d8a65
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
 
 PODFILE CHECKSUM: b88e442b491fb9deac825348c89fce768131d3c4
