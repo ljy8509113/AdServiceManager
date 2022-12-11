@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class OfferwallListViewController: UIViewController {
 
@@ -38,22 +37,7 @@ extension OfferwallListViewController : UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        AF.request("https://api.bithumb.com/public/ticker/ALL_KRW", method: .get)
-            .validate(statusCode: 200..<300)
-            .validate(contentType: ["application/json"])
-            .response { res in
-                var result:String?
-                if let data = res.data {
-                    result = String(data: data, encoding: .utf8)
-                    print(result ?? "")
-                }
-                DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Res", message: result, preferredStyle: .alert)
-                    let defaultAction = UIAlertAction(title: "확인", style: .default)
-                    alert.addAction(defaultAction)
-                    self.present(alert, animated: true)
-                }
-            }
+        
     }
     
 }

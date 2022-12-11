@@ -3763,13 +3763,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "AdServiceManager"
-      },
-      {
         "kind": "TypeDecl",
         "name": "OfferwallListViewController",
         "printedName": "OfferwallListViewController",
@@ -4463,7 +4456,7 @@
     {
       "filePath": "\/Users\/murf\/Desktop\/Source\/ADS\/AdLibrary\/AdServiceManager\/AdServiceManager\/AdServiceManager\/Classes\/Offerwall\/OfferwallListViewController.swift",
       "kind": "Array",
-      "offset": 263,
+      "offset": 246,
       "length": 15,
       "value": "[\"1\", \"2\", \"3\"]"
     }

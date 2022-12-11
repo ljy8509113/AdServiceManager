@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AdServiceManager
 import AdSupport
-import Alamofire
 import AppTrackingTransparency
 import CoreGraphics
 import Foundation
