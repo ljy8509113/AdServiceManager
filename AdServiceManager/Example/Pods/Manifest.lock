@@ -1,11 +1,10 @@
 PODS:
-  - AdServiceManager (0.0.16):
-    - Alamofire (~> 5.1)
-  - Alamofire (5.6.4)
+  - AdServiceManager (0.0.17)
+  - Alamofire (4.7.0)
 
 DEPENDENCIES:
   - AdServiceManager (from `../`)
-  - Alamofire
+  - Alamofire (= 4.7)
 
 SPEC REPOS:
   trunk:
@@ -16,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AdServiceManager: 804fefd6f911ed8f59add73e7962e920041d8a65
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  AdServiceManager: 72169fd5cb201d477589f3baa742891d9a5c581c
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
 
-PODFILE CHECKSUM: b88e442b491fb9deac825348c89fce768131d3c4
+PODFILE CHECKSUM: 0408537ba6fbc6fbbe8885325236b650800c9145
 
 COCOAPODS: 1.11.3

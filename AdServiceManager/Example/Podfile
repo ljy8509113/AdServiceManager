@@ -4,8 +4,7 @@ platform :ios, '12.0'
 
 target 'AdServiceManager_Example' do
   pod 'AdServiceManager', :path => '../'
-  #pod 'AdServiceManager'
-  pod 'Alamofire'
+  pod 'Alamofire', '4.7'
   
   target 'AdServiceManager_Tests' do
     inherit! :search_paths
