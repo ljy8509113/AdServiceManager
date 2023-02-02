@@ -101,11 +101,6 @@
 		608AD8C6298C054E00D57E3E /* OfferwallListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferwallListViewController.swift; sourceTree = "<group>"; };
 		608AD8C7298C054E00D57E3E /* OfferwallListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferwallListViewController.xib; sourceTree = "<group>"; };
 		608AD8C8298C054E00D57E3E /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		608AD8CA298C054E00D57E3E /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
-		608AD8CB298C054E00D57E3E /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
-		608AD8CC298C054E00D57E3E /* KeychainWrapperSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapperSubscript.swift; sourceTree = "<group>"; };
-		608AD8CD298C054E00D57E3E /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftKeychainWrapper.h; sourceTree = "<group>"; };
-		608AD8CE298C054E00D57E3E /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		616062C81FDAB5C58156D8D00F0FC48D /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		64086F70B053F4D115ADC7F1884491BB /* Pods-AdServiceManager_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AdServiceManager_Example"; path = Pods_AdServiceManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9048FDFC1D2E5CA48F13BEE5E6667A /* Pods-AdServiceManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdServiceManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -215,7 +210,6 @@
 				608AD8C4298C054E00D57E3E /* AdManager.swift */,
 				608AD8C5298C054E00D57E3E /* Offerwall */,
 				608AD8C8298C054E00D57E3E /* ReplaceMe.swift */,
-				608AD8C9298C054E00D57E3E /* Keychain */,
 			);
 			name = Classes;
 			path = AdServiceManager/Classes;
@@ -228,18 +222,6 @@
 				608AD8C7298C054E00D57E3E /* OfferwallListViewController.xib */,
 			);
 			path = Offerwall;
-			sourceTree = "<group>";
-		};
-		608AD8C9298C054E00D57E3E /* Keychain */ = {
-			isa = PBXGroup;
-			children = (
-				608AD8CA298C054E00D57E3E /* KeychainManager.swift */,
-				608AD8CB298C054E00D57E3E /* KeychainWrapper.swift */,
-				608AD8CC298C054E00D57E3E /* KeychainWrapperSubscript.swift */,
-				608AD8CD298C054E00D57E3E /* SwiftKeychainWrapper.h */,
-				608AD8CE298C054E00D57E3E /* KeychainItemAccessibility.swift */,
-			);
-			path = Keychain;
 			sourceTree = "<group>";
 		};
 		7D02D4600E8C814A4EF1D8C7FF8FA146 /* Support Files */ = {
